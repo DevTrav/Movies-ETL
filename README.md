@@ -65,7 +65,7 @@ Data sourced from:
 
 * The database creation function required a function to remove the ratings table, if one already existed. During testing, I found that the ratings table creation sequence allowed data to be appended multiple times in the data base. Resolving this issue manually in SQL could be time consuming or messy.
 
-![image](Resources/remove_ratings _table.png)
+![image](Resources/remove_ratings_table.png) 
  
 
 
