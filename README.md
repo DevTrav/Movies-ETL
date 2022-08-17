@@ -44,3 +44,32 @@ Data sourced from:
 
 * Export transformed data into a database.
 ![image](Resources/data_wharehouse.png)
+
+## Results
+
+* Using the extract_load_transform() fucntion created, we were able to clean the raw data, merge the datasets and export the data into two new tables in PostgreSQL by using Python. 
+* The final results created a movies table with 6,052 rows( 17% reduction from the original of 7,311) and a ratings table with 26,024,289 rows.
+* The time Python module was used to display the elapsed time for a new row add in each table
+
+![image](Resources/movies_query.png)
+
+![image](Resources/ratings_query.png)
+
+![image](Resources/elapsed_load_time.png)
+
+## Challenges
+
+* Using git-lfs to track large csv files over 100MB and github SSH login proved cumbersome.
+
+"During the normal lifetime of a request such as a push, git-lfs will generally need to get credentials a few times - once to actually push content to the remote, as well as some additional API requests to do LFS-specific operations. As such, it's normal for git-lfs to need credentials three times as you're seeing here." [comment from git-lfs contributor Lilah Ingvaldsen](https://github.com/git-lfs/git-lfs/issues/3318#issuecomment-430803103)
+
+* The database creation function required a function to remove the ratings table, if one already existed. During testing, I found that the ratings table creation sequence allowed data to be appended multiple times in the data base. Resolving this issue manually in SQL could be time consuming or messy.
+
+![image](Resources/remove_ratings _table.png)
+ 
+
+
+## Summary
+
+It was clear why the ETL process of creating a data pipeline is extremely popular when cosuming and evaluating large data sets. 
+
