@@ -21,13 +21,13 @@ The data set includes movies from 1990 to 2018.
 The pandas and json libraries were used to read data from multiple sources using Python. 
 Data sourced from:
 
-	* **Wikipedia:** (format: .json, file size: 6.2MB) ~7 thousand movie titles that include information about the movies, budgets, box office returns, cast/crew, production and distribution.
+* **Wikipedia:** (format: .json, file size: 6.2MB) ~7 thousand movie titles that include information about the movies, budgets, box office returns, cast/crew, production and distribution.
 
-	* **Kaggle:** - 2 files (format: .csv)
-    
-		* a metadata file from [The Movie Database](https://www.themoviedb.org/) containing movie details with 45.5 thousand entries. (File size: 34.4MB)
+* **Kaggle:** - 2 files (format: .csv)
 
-		* a dataset from [MovieLens](https://movielens.org/) containing over 26 million movie ratings/review. (File size: 709.6MB)
+    * a metadata file from [The Movie Database](https://www.themoviedb.org/) containing movie details with 45.5 thousand entries. (File size: 34.4MB)
+
+    * a dataset from [MovieLens](https://movielens.org/) containing over 26 million movie ratings/review. (File size: 709.6MB)
 
 ![image](Resources/extract_data.png)
 
