@@ -51,9 +51,11 @@ Data sourced from:
 * The final results created a movies table with 6,052 rows( 17% reduction from the original of 7,311) and a ratings table with 26,024,289 rows.
 * The time Python module was used to display the elapsed time for a new row add in each table
 
-![image](Resources/movies_query.png)
+![image](Resources/moivies_query.png)
+
 
 ![image](Resources/ratings_query.png)
+
 
 ![image](Resources/elapsed_load_time.png)
 
@@ -65,7 +67,7 @@ Data sourced from:
 
 * The database creation function required a function to remove the ratings table, if one already existed. During testing, I found that the ratings table creation sequence allowed data to be appended multiple times in the data base. Resolving this issue manually in SQL could be time consuming or messy.
 
-![image](Resources/remove_ratings_table.png) 
+![image](Resources/remove_ratings _table.png) 
  
 
 
